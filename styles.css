@@ -15,7 +15,7 @@ body {
 .hero {
     text-align: center;
     padding: 5rem 1rem;
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.8);
     margin: 5rem auto;
     border-radius: 10px;
     max-width: 1200px;
@@ -34,16 +34,19 @@ body {
     text-align: center;
     padding: 2rem 1rem;
     border-radius: 10px;
+    flex-wrap: wrap; /* Flex items wrap onto multiple lines */
 }
 
 .course {
     margin: 1rem;
     padding: 1rem;
+    flex: 1 0 30%; /* Flex items will take up equal space, with a maximum width of 30% */
+    max-width: 300px; /* Maximum width for each course */
 }
 
 .course img {
-    width: 150px;
-    height: 150px;
+    width: 100%;
+    height: auto; /* Ensure images maintain aspect ratio */
     border-radius: 10px;
     margin-bottom: 1rem;
 }
