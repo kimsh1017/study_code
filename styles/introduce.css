@@ -1,0 +1,100 @@
+/* Basic CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #2c3e50;
+    background: url('/img/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tutor-introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem; /* Add margin to avoid the top edge */
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.info h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.info h2 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.info ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+.info ul li {
+    margin-bottom: 0.5rem;
+}
+
+.info p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 1rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .tutor-introduction {
+        padding: 1rem;
+    }
+
+    .profile {
+        flex-direction: column;
+    }
+
+    .info h1 {
+        font-size: 1.5rem;
+    }
+
+    .info h2 {
+        font-size: 1.25rem;
+    }
+
+    .info p {
+        font-size: 0.9rem;
+    }
+}
